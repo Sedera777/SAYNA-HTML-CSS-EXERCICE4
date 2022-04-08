@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+ :root {
+    --primary-color: #B11313;
+    --primary-yellow: #f1c530;
+    --primary-blue: #114C92;
+    --primary-dark: #000000;
+    --primary-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    background: var(--primary-color);
+}
+
+header {
+    padding: 1%;
+    margin: 0 !important;
+    background: var(--primary-color);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+a:hover {
+    color: var(--primary-white);
+}
+
+main {
+    background-image: url(../img/img35.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 45%;
+}
+
+h1 {
+    font-weight: bold;
+    margin-left: 20%;
+    padding-top: 35%;
+    font-weight: bold;
+    color: var(--primary-white);
+    font-family: 'Far From Homecoming';
+}
+
+p {
+    color: #ffffff;
+    margin-left: 20%;
+    font-weight: bold;
+    margin-bottom: 0!important;
+}
+
+.responsive {
+    display: none;
+}
+
+.small {
+    font-size: small;
+}
+
+.x-small {
+    font-size: x-small;
+}
+
+footer {
+    background: var(--primary-dark);
+}
+
+.logo {
+    margin-bottom: -2.2%;
+}
+
+.Mobile {
+    margin-left: 12%;
+}
+
+.Contact {
+    margin-left: 20%;
+}
+
+select {
+    width: 120px;
+    padding: 5px;
+    border: #B11313;
+    color: var(--primary-white);
+    background: var(--primary-color);
+}
+
+.SocialMedia {
+    word-spacing: 10px;
+}
+
+.Media {
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+@media all and (max-width:768px) {
+    main {
+        background-position-y: 70%;
+    }
+    .web {
+        display: none;
+    }
+    .responsive {
+        display: block;
+    }
+    .logo {
+        width: 150%;
+        margin-bottom: -40%;
+        margin-left: -25%;
+    }
+    .Mobile {
+        padding-top: 10%;
+        margin-top: 25%;
+        margin-left: 15%;
+    }
+    .Contact {
+        margin-left: 0%;
+    }
+    .Langue {
+        margin-left: 55%;
+        margin-top: -14%;
+    }
+    select {
+        padding: 1.5%;
+    }
+}

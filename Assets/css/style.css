@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+ :root {
+    --primary-color: #B11313;
+    --primary-yellow: #f1c530;
+    --primary-blue: #114C92;
+    --primary-dark: #000000;
+    --primary-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 1%;
+    margin: 0 !important;
+    background: var(--primary-color);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+a:hover {
+    color: var(--primary-white);
+}
+
+main {
+    background-image: url("../img/img1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #B11313;
+}
+
+.Box-Title {
+    margin-left: 17%;
+    padding-top: 21%;
+}
+
+h1 {
+    color: var(--primary-white);
+    font-family: 'Far From Homecoming';
+}
+
+.small {
+    font-size: small;
+}
+
+.x-small {
+    font-size: x-small;
+}
+
+.whtbtn {
+    border: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--primary-white);
+}
+
+.drkbtn {
+    border: 1px solid #ffffff;
+    background: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.content>h5 {
+    margin-left: 17%;
+    padding-top: 17%;
+    color: var(--primary-white);
+    font-family: 'Far From Homecoming';
+}
+
+.left {
+    margin: 0;
+    font-size: small;
+    margin-left: 17%;
+    color: var(--primary-white);
+}
+
+.content-spiderman {
+    display: flex;
+    margin-left: 13%;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.column {
+    flex: 30%;
+    margin: 4%;
+}
+
+.BecomeSpiderMan {
+    background: url(../img/img5.png) #114C92;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 554px;
+}
+
+.Become>h5 {
+    color: var(--primary-white);
+    font-family: 'Far From Homecoming';
+}
+
+.p-white::placeholder {
+    color: #ffffff;
+}
+
+.Newsletter {
+    background: var(--primary-color);
+}
+
+.News {
+    margin-left: 17%;
+}
+
+label {
+    margin-top: -10%;
+}
+
+.Letter>h5 {
+    font-family: 'Far From Homecoming';
+}
+
+.Black-Spiderman {
+    position: relative;
+    right: -7%;
+}
+
+footer {
+    background: var(--primary-dark);
+}
+
+.logo {
+    margin-bottom: -2.2%;
+}
+
+.Mobile {
+    margin-left: 12%;
+}
+
+.Contact {
+    margin-left: 20%;
+}
+
+select {
+    width: 120px;
+    padding: 5px;
+    border: #B11313;
+    color: var(--primary-white);
+    background: var(--primary-color);
+}
+
+.SocialMedia {
+    word-spacing: 10px;
+}
+
+.Media {
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+@media all and (max-width:768px) {
+    .content-spiderman {
+        display: block;
+        margin: 0%;
+    }
+    h5,
+    .left {
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+    }
+    .content {
+        padding-bottom: 1%;
+    }
+    .Tobey,
+    .Andrew,
+    .Tom {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .whtbtn,
+    .drkbtn {
+        border-radius: 60px;
+    }
+    .Become {
+        margin-top: 12%;
+    }
+    .logo {
+        width: 150%;
+        margin-bottom: -40%;
+        margin-left: -25%;
+    }
+    .Mobile {
+        padding-top: 10%;
+        margin-top: 25%;
+        margin-left: 15%;
+    }
+    .Contact {
+        margin-left: 0%;
+    }
+    .Langue {
+        margin-left: 55%;
+        margin-top: -14%;
+    }
+    select {
+        padding: 1.5%;
+    }
+}

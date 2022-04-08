@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+ :root {
+    --primary-color: #B11313;
+    --primary-yellow: #f1c530;
+    --primary-blue: #114C92;
+    --primary-dark: #000000;
+    --primary-white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    padding: 1%;
+    margin: 0 !important;
+    background: var(--primary-yellow);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--primary-white);
+}
+
+a:hover {
+    color: var(--primary-white);
+}
+
+main {
+    background-color: #f1c530;
+}
+
+.head {
+    background: url(../img/img7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 640px;
+}
+
+.head>p {
+    margin-left: 10%;
+}
+
+h1 {
+    margin-left: 10%;
+    padding-top: 10%;
+    color: var(--primary-white);
+    font-family: 'Far From Homecoming';
+}
+
+.small {
+    font-size: small;
+}
+
+.x-small {
+    font-size: x-small;
+}
+
+.center {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.card {
+    background: none;
+    border-radius: 0px 0px 30px 30px;
+    border-right: 10px solid #30270a;
+    border-left: 10px solid #30270a;
+    border-bottom: 10px solid #30270a;
+}
+
+footer {
+    background: var(--primary-dark);
+}
+
+.logo {
+    margin-bottom: -2.2%;
+}
+
+.Mobile {
+    margin-left: 12%;
+}
+
+.Contact {
+    margin-left: 20%;
+}
+
+select {
+    width: 120px;
+    padding: 5px;
+    border: #f1c530;
+    color: var(--primary-white);
+    background: var(--primary-yellow);
+}
+
+.SocialMedia {
+    word-spacing: 10px;
+}
+
+.Media {
+    padding: 10px;
+    border-radius: 50%;
+    background: var(--primary-yellow);
+}
+
+@media all and (max-width:768px) {
+    .logo {
+        width: 150%;
+        margin-bottom: -40%;
+        margin-left: -25%;
+    }
+    .Mobile {
+        padding-top: 10%;
+        margin-top: 25%;
+        margin-left: 15%;
+    }
+    .Contact {
+        margin-left: 0%;
+    }
+    .Langue {
+        margin-left: 55%;
+        margin-top: -14%;
+    }
+    select {
+        padding: 1.5%;
+    }
+}
