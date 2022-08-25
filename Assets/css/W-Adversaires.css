@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+@font-face {
+    font-family: 'Far From Homecoming';
+    src: url('../fonts/far-from_homecoming_updated-webfont.woff');
+}
+
  :root {
     --primary-color: #B11313;
     --primary-yellow: #f1c530;
@@ -27,6 +31,7 @@ header {
 
 a {
     font-weight: bold;
+    white-space: nowrap;
     text-decoration: none;
     color: var(--primary-white);
 }
@@ -72,11 +77,13 @@ h1 {
 }
 
 .card {
-    background: none;
+    min-height: 400px;
+    height: fit-content;
+    background: transparent;
     border-radius: 0px 0px 30px 30px;
-    border-right: 10px solid #30270a;
-    border-left: 10px solid #30270a;
-    border-bottom: 10px solid #30270a;
+    border-right: 8px solid #30270a;
+    border-left: 8px solid #30270a;
+    border-bottom: 8px solid #30270a;
 }
 
 footer {
@@ -114,6 +121,9 @@ select {
 }
 
 @media all and (max-width:768px) {
+    .head {
+        background-position: 100%;
+    }
     .logo {
         width: 150%;
         margin-bottom: -40%;

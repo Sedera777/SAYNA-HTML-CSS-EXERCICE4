@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+@font-face {
+    font-family: 'Far From Homecoming';
+    src: url('../fonts/far-from_homecoming_updated-webfont.woff');
+}
+
  :root {
     --primary-color: #B11313;
     --primary-yellow: #f1c530;
@@ -33,6 +37,7 @@ header {
 
 a {
     font-weight: bold;
+    white-space: nowrap;
     text-decoration: none;
     color: var(--primary-white);
 }
@@ -50,7 +55,7 @@ a:hover {
 }
 
 #LaToile {
-    background: #f1c530;
+    background: var(--primary-yellow);
 }
 
 .Rotate {
@@ -88,8 +93,22 @@ h1 {
     background: var(--primary-color);
 }
 
+form input[type="text"],
+form input[type="email"] {
+    width: 350px;
+    height: 27px;
+    border: 1px solid #ffffff;
+    background: transparent;
+}
+
+form button[type="submit"] {
+    border-radius: 12px;
+    padding: 10px;
+    width: 170px;
+}
+
 ::placeholder {
-    color: #ffffff;
+    color: var(--primary-white);
 }
 
 textarea {
@@ -99,20 +118,20 @@ textarea {
 }
 
 h2 {
-    color: #ffffff;
+    color: var(--primary-white);
     margin-left: 9%;
     padding-top: 7%;
     font-family: 'Far From Homecoming';
 }
 
 #Antenne>p {
-    color: #ffffff;
+    color: var(--primary-white);
     margin-left: 9%;
     margin-bottom: 0;
 }
 
 .SaynaMarvel {
-    background: #114C92;
+    background: var(--primary-blue);
 }
 
 .Title {
@@ -147,7 +166,7 @@ footer {
 select {
     width: 120px;
     padding: 5px;
-    border: #B11313;
+    border: var(--primary-color);
     color: var(--primary-white);
     background: var(--primary-color);
 }

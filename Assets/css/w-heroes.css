@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+@font-face {
+    font-family: 'Far From Homecoming';
+    src: url('../fonts/far-from_homecoming_updated-webfont.woff');
+}
+
 :root {
     --primary-color: #B11313;
     --primary-yellow: #f1c530;
@@ -16,13 +20,8 @@
 
 body {
     font-size: 14px;
-    text-align: justify;
     text-justify: inter-word;
     font-family: 'Montserrat', sans-serif;
-}
-
-p {
-    margin: 0 auto !important;
 }
 
 header {
@@ -34,6 +33,7 @@ header {
 
 a {
     font-weight: bold;
+    white-space: nowrap;
     text-decoration: none;
     color: var(--primary-white);
 }
@@ -48,7 +48,6 @@ a:hover {
     background-position: center;
     background-size: cover;
     height: 600px;
-    ;
 }
 
 h1 {
@@ -78,8 +77,22 @@ h2 {
     background: var(--primary-blue);
 }
 
+#Values .valeurs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Values p {
+    width: 500px;
+}
+
+#Values .video {
+    margin-left: 70px;
+}
+
 #Foundation {
     background: url("../img/img20.png");
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -113,6 +126,14 @@ h2 {
     margin-left: 15%;
 }
 
+.best-friends {
+    width: 500px;
+}
+
+#AVENGERS {
+    width: 100vw;
+}
+
 .Avengers {
     background: #B11313;
     text-align: justify;
@@ -130,7 +151,6 @@ div.col.marge {
     background: url("../img/img32.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1068px;
 }
 
 .font {
@@ -138,14 +158,15 @@ div.col.marge {
 }
 
 .last {
-    background: url("../img/img33.png");
+    background: url("../img/img33.png") no-repeat;
+    background-size: cover;
     height: 600px;
 }
 
 .Univers {
     height: 600px;
     margin-left: 2%;
-    margin-right: 12%;
+    margin-right: 10%;
     background-color: rgba(17, 76, 146, 0.7);
 }
 
@@ -188,7 +209,18 @@ select {
 }
 
 @media all and (max-width:768px) {
+    #Values .video {
+        display: block;
+        text-align: center;
+    }
     .solides {
+        text-align: center;
+    }
+    .NeverAlone h2 {
+        text-align: center;
+        margin-top: -50px;
+    }
+    .NeverAlone p {
         text-align: center;
     }
     #AVENGERS,
@@ -214,5 +246,15 @@ select {
     }
     select {
         padding: 1.5%;
+    }
+}
+
+@media all and (max-width:576px) {
+    #Values P {
+        width: 300px;
+    }
+    video {
+        width: 320px;
+        height: 240px;
     }
 }

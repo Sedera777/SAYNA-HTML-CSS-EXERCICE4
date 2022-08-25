@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url(//db.onlinewebfonts.com/c/f28a8f550d384f1e8f3c85ff728c4987?family=Far+From+Homecoming);
+@font-face {
+    font-family: 'Far From Homecoming';
+    src: url('../fonts/far-from_homecoming_updated-webfont.woff');
+}
+
  :root {
     --primary-color: #B11313;
     --primary-yellow: #f1c530;
@@ -31,6 +35,7 @@ header {
 
 a {
     font-weight: bold;
+    white-space: nowrap;
     text-decoration: none;
     color: var(--primary-white);
 }
